@@ -1,3 +1,8 @@
+
+
+## 1.0.1
+- 작업 중인 상태입니다. 사용하지마세요.
+
 ## 0.5.2
 - Reformat all code with `dartfmt -w .`.
 

@@ -1,4 +1,4 @@
-package android
+package kakao_flutter_mirror
 
 group 'com.kakao.sdk.flutter'
 version '1.0-SNAPSHOT'

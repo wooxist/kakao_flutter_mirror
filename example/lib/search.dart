@@ -1,8 +1,9 @@
+import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:bloc/bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:kakao_flutter_mirror_example/search_bloc/search_state.dart';
+
 import 'search_bloc/bloc.dart';
 
 class DataSearch extends SearchDelegate<String> {
@@ -59,10 +60,7 @@ class DataSearch extends SearchDelegate<String> {
               return SingleChildScrollView(
                   child: Column(
                 children: <Widget>[
-                  Text(
-                    "Web pages",
-                    style: Theme.of(context).textTheme.headline,
-                  ),
+                  Text("Web pages"),
                   ListView.builder(
                     physics: NeverScrollableScrollPhysics(),
                     shrinkWrap: true,
@@ -76,10 +74,7 @@ class DataSearch extends SearchDelegate<String> {
                     },
                     itemCount: state.results.documents.length,
                   ),
-                  Text(
-                    "Images",
-                    style: Theme.of(context).textTheme.headline,
-                  ),
+                  Text("Images"),
                   GridView.count(
                     crossAxisCount: 4,
                     physics: NeverScrollableScrollPhysics(),
@@ -93,10 +88,7 @@ class DataSearch extends SearchDelegate<String> {
                       ));
                     }).toList(),
                   ),
-                  Text(
-                    "Blogs",
-                    style: Theme.of(context).textTheme.headline,
-                  ),
+                  Text("Blogs"),
                   ListView.builder(
                     physics: NeverScrollableScrollPhysics(),
                     shrinkWrap: true,
@@ -110,10 +102,7 @@ class DataSearch extends SearchDelegate<String> {
                     },
                     itemCount: state.blogs.documents.length,
                   ),
-                  Text(
-                    "Books",
-                    style: Theme.of(context).textTheme.headline,
-                  ),
+                  Text("Books"),
                   ListView.builder(
                     physics: NeverScrollableScrollPhysics(),
                     shrinkWrap: true,
